@@ -1,0 +1,102 @@
+baseURL: https://fionera.de/
+languageCode: en-us
+title: Fionera's Blog
+theme: "PaperMod"
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+params:
+    env: production
+    title: Fionera's Blog
+    description: "Fionera's totally unsorted and not updated blog"
+    keywords: [Blog, Portfolio, PaperMod]
+    author: Me
+    # author: ["Me", "You"] # multiple authors
+    images: ["https://avatars.githubusercontent.com/u/5741401?v=4?s=400"]
+    defaultTheme: dark # dark, light
+    disableThemeToggle: true
+
+    ShowReadingTime: true
+    ShowShareButtons: true
+    ShowPostNavLinks: true
+    ShowBreadCrumbs: true
+    ShowCodeCopyButtons: false
+    disableSpecial1stPost: false
+    disableScrollToTop: false
+    comments: true
+    hidemeta: false
+    hideSummary: false
+    showtoc: false
+    tocopen: false
+
+    mainSections:
+      - blog
+
+    assets:
+        # disableHLJS: true # to disable highlight.js
+        # disableFingerprinting: true
+        favicon: "https://avatars3.githubusercontent.com/u/5741401?s=460&v=4"
+        favicon16x16: "https://avatars3.githubusercontent.com/u/5741401?s=460&v=4"
+        favicon32x32: "https://avatars3.githubusercontent.com/u/5741401?s=460&v=4"
+        apple_touch_icon: "https://avatars3.githubusercontent.com/u/5741401?s=460&v=4"
+        safari_pinned_tab: "https://avatars3.githubusercontent.com/u/5741401?s=460&v=4"
+
+    label:
+        text: "Home"
+        icon: https://avatars3.githubusercontent.com/u/5741401?s=460&v=4
+        iconHeight: 35
+
+    # profile-mode
+    profileMode:
+        enabled: false # needs to be explicitly set
+        title: ExampleSite
+        subtitle: "This is subtitle"
+        imageUrl: "<img location>"
+        imageWidth: 120
+        imageHeight: 120
+        imageTitle: my image
+        buttons:
+            - name: Posts
+              url: posts
+            - name: Tags
+              url: tags
+
+    # home-info mode
+    homeInfoParams:
+        Title: "Ohai \U0001F44B"
+        Content: |
+          Hey, My name is Tim. I am the maintainer of [Netmeta](https://github.com/monogon-dev/NetMeta) and a Software Developer/Systems Engineer at monogon SE. 
+            In my free time I do mostly random project which tend to escalate into absurd extremes. You can find my Salary Transparency [here](/salary-transparency/).
+
+    socialIcons:
+        - name: github
+          url: "https://github.com/fionera"
+
+    cover:
+        hidden: true # hide everywhere but not in structured data
+        hiddenInList: true # hide on list pages and home
+        hiddenInSingle: true # hide on single page
+
+    editPost:
+        URL: "https://github.com/fionera/fionera/blob/new/content"
+        Text: "Suggest Changes" # edit text
+        appendFilePath: true # to append file path to Edit link
+
+    # for search
+    # https://fusejs.io/api/options.html
+    fuseOpts:
+        isCaseSensitive: false
+        shouldSort: true
+        location: 0
+        distance: 1000
+        threshold: 0.4
+        minMatchCharLength: 0
+        keys: ["title", "permalink", "summary", "content"]
+menu:
+    main:
+        - identifier: Blog
+          name: Blog
+          url: /blog/
+          weight: 10
