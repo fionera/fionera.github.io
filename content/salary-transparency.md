@@ -12,7 +12,7 @@ From [Xeiaso](https://xeiaso.net/salary-transparency):
 
 | Company    | Title                      | Start Date | Salary       |
 |------------|----------------------------|------------|--------------|
-| Monogon SE | Archmage of Infrastructure | 01/10/2021 | 57.240€/year |
+| Monogon SE | Archmage of Infrastructure | 01/03/2023 | 57.240€/year |
 | Babiel     | Systems Engineer           | 01/10/2021 | 57.204€/year |
 | Babiel     | Junior Systems Engineer    | 01/06/2020 | 50.400€/year |
 | Ostermann  | PHP Software Developer     | 01/07/2019 | 39.996€/year |
