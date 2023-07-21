@@ -31,5 +31,7 @@ While implementing the reader I also started to gain interest in optimizing it.
 
 After about an evening of implementing the format and another day of optimizing the reader to read-ahead and use an optimized varint decoder I was at the current speed of about half a gigabyte per second. There is probably still room to improve, e.g. using simd instructions to accelerate the varint decoding even more but this has to be it for now. 
 
-With all these optimizations I was able to decode the 800GB of compressed data in about 30 minutes.
+With all these optimizations I was able to decode the 800GB of compressed data in about 30 minutes. 
 ![img_1.png](img_1.png)
+
+If you also have splunk data which you want to decode you can try to use [splunker](https://github.com/fionera/splunker) which is the result of this journey and if you have any problems with it, feel free to open an issue
